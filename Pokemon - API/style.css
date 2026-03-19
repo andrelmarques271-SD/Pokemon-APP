@@ -1,0 +1,9 @@
+body {  margin: 0;  font-family: Arial;  background: radial-gradient(circle, #e4af4c 0%, #603e00 100%);}
+.container {  max-width: 500px;  margin: auto;  padding: 50px;  text-align: center;}
+button {  font-weight: bold;  margin: 15px;  padding: 10px;  width: 65%;  background-color: #ff3d3d;  color: rgb(240, 240, 240);  border: none;  border-radius: 9px;}
+.box {    flex: 1;    font-family: Arial, Helvetica, sans-serif;    font-size: smaller;    font-style: italic;    background-color: rgb(46, 60, 60);    color: yellow;    padding: 10px;    border-radius: 25px;    width: auto;    border: 3px solid rgb(255, 255, 255);}
+
+.box2 {    flex: 1;    font-size: large;    background-color: rgb(255, 255, 255);    color: rgb(0, 0, 0);    padding: 5px;    border-radius: 10px;    border: 3px solid rgb(0, 0, 0);}
+img {  width: 300px;}
+/* Responsivo */@media (max-width: 600px) {  img {    width: 225px;  }}
+@media (max-width: 600px) {    .box {        max-width: 300px;    }}
