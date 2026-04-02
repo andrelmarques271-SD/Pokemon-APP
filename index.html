@@ -1,0 +1,46 @@
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Qual é o seu Pokemon?</title>
+        
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#3b4cca">
+        <meta name="description" content="Aplicativo para descobrir qual Pokémon combina com você">
+        <link rel="manifest" href="manifest.json">
+        
+        <link rel="stylesheet" href="style.css">
+
+    
+    </head>
+    
+    <body>
+        
+        <main class="container">
+              
+            <div class="box"><h1>Qual é o seu Pokemon?</h1></div>
+            <div></div>
+            
+            <button onclick="sortearPokemon()" aria-label="Sortear um Pokémon">
+                    Sortear Pokémon
+            </button>
+            
+            <div class="box2">
+                <h2 style="position:absolute; left:-9999px;">
+                    Resultado do Pokémon sorteado
+                </h2>
+            <div id="pokemon" aria-live="polite"></div>
+        </div>
+        
+        </main>
+        
+        <script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+}
+</script>
+
+    </body>
+</html>
